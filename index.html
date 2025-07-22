@@ -1,27 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>PRANK TEMAN!</title>
-	<style>
-		body {
-			background-color: #f2f2f2;
-			font-family: Arial, sans-serif;
-			text-align: center;
-		}
-		
-		.prank {
-			margin-top: 100px;
-			font-size: 48px;
-			font-weight: bold;
-			color: #ff0000;
-		}
-	</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semangat Pagi!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            text-align: center;
+            padding-top: 20vh;
+        }
+        .semangat {
+            font-size: 48px;
+            color: #ff9900;
+            text-shadow: 2px 2px #ccc;
+        }
+        .motivasi {
+            font-size: 24px;
+            margin-top: 20px;
+            color: #666;
+        }
+    </style>
 </head>
 <body>
-	<div class="prank">
-		<p>PC ANDA AKAN MELEDAK</p>
-		<p>BUKA GAMBAR DI BAWAH UNTUK BATALKAN LEDAKAN</p>
-		<button onclick="window.location.href='https://i.pinimg.com/736x/92/2e/9b/922e9bf303a0925d2e674e2992a41ddf.jpg'">Klik di sini untuk keluar</button>
-	</div>
+    <div class="semangat">Semangat Pagi! Ayangg</div>
+    <div class="motivasi">Mari mulai hari ini dengan penuh energi dan optimisme!</div>
+
+    <script>
+        const motivasiList = [
+            "Mari mulai hari ini dengan penuh energi!",
+            "Semangat pagi untuk hari yang lebih baik!",
+            "Hari ini adalah kesempatan baru untuk sukses!",
+            "Jangan lupa tersenyum di pagi hari!",
+        ];
+
+        let i = 0;
+        setInterval(() => {
+            document.querySelector('.motivasi').innerHTML = motivasiList[i];
+            i = (i + 1) % motivasiList.length;
+        }, 3000);
+    </script>
 </body>
 </html>
