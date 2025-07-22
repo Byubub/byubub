@@ -1,45 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Semangat Pagi!</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
-            text-align: center;
-            padding-top: 20vh;
-        }
-        .semangat {
-            font-size: 48px;
-            color: #ff9900;
-            text-shadow: 2px 2px #ccc;
-        }
-        .motivasi {
-            font-size: 24px;
-            margin-top: 20px;
-            color: #666;
-        }
-    </style>
+	<title>Pendaftaran Akun VIP</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+		}
+		
+		.container {
+			width: 50%;
+			margin: 40px auto;
+			padding: 20px;
+			background-color: #f9f9f9;
+			border: 1px solid #ddd;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		
+		.form-group {
+			margin-bottom: 20px;
+		}
+		
+		.form-group label {
+			display: block;
+			margin-bottom: 10px;
+		}
+		
+		.form-group input[type="text"], .form-group input[type="email"], .form-group input[type="password"] {
+			width: 100%;
+			height: 40px;
+			padding: 10px;
+			font-size: 16px;
+			border: 1px solid #ccc;
+		}
+		
+		.form-group input[type="submit"] {
+			width: 100%;
+			height: 40px;
+			padding: 10px;
+			font-size: 16px;
+			background-color: #F18413;
+			color: #fff;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		
+		.form-group input[type="submit"]:hover {
+			background-color: #3e8e41;
+		}
+	</style>
 </head>
 <body>
-    <div class="semangat">Semangat Pagi! Ayangg</div>
-    <div class="motivasi">Mari mulai hari ini dengan penuh energi dan optimisme!</div>
+	<div class="container">
+		<h2>Pendaftaran Akun VIP</h2>
+		<form>
+			<div class="form-group">
+				<label>Nama Lengkap</label>
+				<input type="text" name="nama" placeholder="Masukkan nama lengkap Anda">
+                
+                
+      <label for="bank-select">Pilih Server VIP:</label>
+<select id="bank-select" name="bank">
+  <option value="vip1">VIP 1</option>
+  <option value="vip2">VIP 2</option>
+  <option value="vip3">VIP 3</option>
+  <option value="vip4">VIP 3</option>
+  <option value="vip5">VIP 5</option>
+  <option value="vip6">VIP 6</option>
+  <option value="vip7">VIP 7</option>
+  <option value="vip8">VIP </option>
+  <!-- Add more options as needed -->
+</select>
 
-    <script>
-        const motivasiList = [
-            "Mari mulai hari ini dengan penuh energi!",
-            "Semangat pagi untuk hari yang lebih baik!",
-            "Hari ini adalah kesempatan baru untuk sukses!",
-            "Jangan lupa tersenyum di pagi hari!",
-        ];
+<a href="https://www.bolasinga.org/_View/Register.aspx?ref=EE0C2C">Klik di sini untuk redirect</a>
+			</div>
+			<div class="form-group">
 
-        let i = 0;
-        setInterval(() => {
-            document.querySelector('.motivasi').innerHTML = motivasiList[i];
-            i = (i + 1) % motivasiList.length;
-        }, 3000);
-    </script>
+			</div>
+		</form>
+	</div>
 </body>
 </html>
